@@ -1,10 +1,17 @@
 
 <div>
+    <br>
+ <div>
 User Name: <input type="text" name="username" [(ngModel)]="username">
+</div>
+<div>
 password: <input type="password" name="password" [(ngModel)]="password">
+</div>
+<div>
+<button (click)="onSubmit()">submit</button> 
+</div>
+<!-- <button routerLink="welcome" routerLinkActive="active">submit</button> -->
 
-<!-- <button (click)="onSubmit()">submit</button> -->
-<button routerLink="welcome" routerLinkActive="active">submit</button>
 </div>
 <small *ngIf="invalidLogin">{{errorMessage}}</small>
 
